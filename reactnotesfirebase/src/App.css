@@ -154,7 +154,7 @@ textarea {
 .buttonLogin {
   background: rgb(15,169,255);
   background: radial-gradient(circle, rgba(15,169,255,1) 0%, rgba(0,125,255,1) 100%);
-  width: 80px;
-  height: 80px;
+  width: 81px;
+  height: 81px;
   border-radius: 20px;
 }
