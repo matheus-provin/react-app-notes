@@ -4,9 +4,6 @@ import { app } from "../services/firebaseConfig";
 import { Navigate } from "react-router-dom";
 const provider = new GoogleAuthProvider();
 
-
-
-
 export const  AuthGoogleContext = createContext({})
 
 export const AuthGoogleProvider = ({children}) => {
@@ -42,8 +39,6 @@ export const AuthGoogleProvider = ({children}) => {
         const credential = GoogleAuthProvider.credentialFromError(error);
       });
         }
-
-
         function signOut() {
             setUser(null)
             return <Navigate to="/"/>
@@ -53,6 +48,4 @@ export const AuthGoogleProvider = ({children}) => {
             <AuthGoogleContext.Provider
 value={{signInGoogle, signed: !!user, user, signOut}}>{children}</AuthGoogleContext.Provider>
         )
-
-
 }
