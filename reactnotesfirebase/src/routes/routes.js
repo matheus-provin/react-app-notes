@@ -7,7 +7,7 @@ import { PrivateRoutes } from '.'
 export const AppRoutes = () => {
     return (
         <HashRouter>
-            <Routes>
+            <Routes basename={process.env.REACT_APP_URI}>
                 <Route path='/' element={<Login />}/> 
                 <Route path='/home' element={<PrivateRoutes />}>
                 <Route path='/home' element={<Home/>}/> 
