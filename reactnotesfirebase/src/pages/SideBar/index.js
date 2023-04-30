@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { AuthGoogleContext } from "../../context/authGoogle";
+import { useNavigate} from "react-router-dom";
+import './sidebar.css'
 
 const Sidebar = ({
     notes,
@@ -9,13 +9,19 @@ const Sidebar = ({
     setActiveNote,
   }) => {
     const sortedNotes = notes.sort((a, b) => b.lastModified - a.lastModified);
-    const {user, signOut} = useContext(AuthGoogleContext)
+    
+    const navigate = useNavigate()
+
+    function signout() {
+      navigate('/')
+    }
+
     return (
       <div className="app-sidebar">
         <div className="app-sidebar-header">
-          <h1>Notas</h1>
-          <button onClick={signOut}>Sair</button>
-          <button onClick={onAddNote}>Adicionar</button>
+          <h1 className="notasTitle">NotasApp</h1>
+          <button onClick={signout} className="button-4">Sair</button>
+          <button className="button-3" onClick={onAddNote}>Adicionar</button>
         </div>
         <div className="app-sidebar-notes">
           {sortedNotes.map(({ id, title, body, lastModified }, i) => (
@@ -25,7 +31,7 @@ const Sidebar = ({
             >
               <div className="sidebar-note-title">
                 <strong>{title}</strong>
-                <button onClick={(e) => onDeleteNote(id)}>Excluir</button>
+                <button className="button-4" onClick={(e) => onDeleteNote(id)}>Excluir</button>
               </div>
   
               <p>{body && body.substr(0, 100) + "..."}</p>

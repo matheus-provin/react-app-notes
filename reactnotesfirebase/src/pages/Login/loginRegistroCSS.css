@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+
+
+.background {
+    background-color:  #121214;  
+}
+html {
+    background-color:  #121214;
+    
+}
+.Auth-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Auth-form-content{
+    
+}
+.Auth-form {
+    margin-top: 150px;
+}
+.loginBotao {
+    width: 100%;
+    background-color: #81D8F7;
+    color: black;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 19px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.register {
+    background-color: transparent;
+
+}
+.registrarDiv {
+    
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.Auth-form-title {
+    font-family: 'Inter', sans-serif;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 39px;
+    color: #E1E1E6;
+}
+.Auth-form-subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #7C7C8A;
+}
+.input-name {
+    color: #E1E1E6;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 19px;
+    padding-left: 7px;
+    margin-bottom: 1px;
+    
+}
+.form-input-email {
+    text-align: center;
+    display:inline-block;
+    width: 280px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #202024;
+    border: 0;
+    
+}
+.form-input-pass {
+    text-align: left;
+    padding-left: 50px;
+    display:inline-block;
+    width: 280px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #202024;
+    border: 0;
+    
+}
+.input-container {
+    position: relative;
+}
+
+.input-container{
+    position: relative;
+    margin: 5px;
+}
+
+.input-container svg {
+    position:absolute;
+    display:inline-block;
+    width: 30px;
+    height:30px;
+    padding-top: 5px;
+    color: #E1E1E6;;
+    top:2px;
+    padding-left: 7px;
+    
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.title-align  {
+    text-align:center; 
+  vertical-align: middle;
+}
+.registerP {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+text-decoration-line: underline;
+padding-top: 25px;
+color: #7C7C8A;
+}
+.checkbox {
+    all: unset;
+    border: 1px solid black;
+  width: 10px;
+  height: 10px;
+float: left;
+margin-right: 7px;
+margin-top: 2px;
+margin-left: 6px;
+background-color: #202024;
+
+}
+
+.checkbox:checked {
+    background-color:#81D8F7 ;
+    
+}
+.lembrardiv {
+    display: inline;
+    
+    align-items: center;
+    justify-content: left;
+}
+.lembrar {
+    
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 17px;
+color: #C4C4CC;
+}
+

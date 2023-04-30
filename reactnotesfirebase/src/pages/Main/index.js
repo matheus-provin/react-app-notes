@@ -5,7 +5,7 @@ const Main = ({ activeNote, onUpdateNote }) => {
     onUpdateNote({
       ...activeNote,
       [field]: value,
-      lastModified: Date.now(),
+      lastModified: new Date().toISOString(),
     });
   };
 
